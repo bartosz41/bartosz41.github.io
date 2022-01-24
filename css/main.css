@@ -1,0 +1,547 @@
+* {box-sizing: border-box;}
+
+html, body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  background-color: rgb(194, 193, 193);
+}
+
+.card-container{
+  background-color: rgb(194, 193, 193);
+}
+
+hr{
+  margin: 0px;
+  border: none;
+  height: 2px;
+  background-color: gray;
+}
+
+#hr{
+  width: 100%;
+  margin: 0px;
+  border: none;
+  height: 2px;
+  background-color: gray;
+}
+
+.google-font{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 601px){
+  form > label{
+    margin-left: 45%;
+  }
+  form > input{
+    margin-left: 25%;
+  }
+  form > select{
+    margin-left: 25%;
+  }
+  form > textarea{
+    margin-left: 25%;
+  }
+  .submit{
+    margin-left: 45%;
+  }
+}
+
+#mice-1{
+  margin-left: 15%;
+}
+.card{
+  width: 15%;
+}
+
+.card-container{
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .card-container{
+    display:list-item;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #mice-1{
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+  .card-container{
+    width: 100%;
+  }
+  .card-body{
+    width: 100%;
+  }
+  .card{
+    width: 60%;
+    margin-bottom: 30%;
+    background-color: #555;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form > label{
+    margin-left: 25%;
+  }
+  form > input{
+    margin-left: 25%;
+  }
+  form > select{
+    margin-left: 25%;
+  }
+  form > textarea{
+    margin-left: 25%;
+  }
+  .submit{
+    margin-left: 25%;
+  }
+}
+
+.active{
+  background-color: #555;
+  color: white;
+}
+
+.header {
+  overflow: hidden;
+  background-color: rgb(212, 212, 212);
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 24px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: rgb(99, 98, 98);
+  color: white;
+}
+
+.header a.active {
+  background-color: gray;
+  color: white;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+    float: right;
+  }
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-left {
+    float: none;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+.footer-text{
+    line-height: 75px;
+}
+
+.intro{
+  color: white;
+  padding: 20px;
+  border: 3px solid gray;
+  margin-top:13%;
+  margin-left: 20px;
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(58, 58, 58);  color: white;
+  text-align: center;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    background-color: rgb(194, 193, 193);
+    height: 100%;
+}
+
+.header-center{
+    font-size: 48px;
+    background-color: none;
+}
+
+.description > span{
+    font-size: 24px;
+    color: white;
+}
+
+.description{
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+/* Etiquetes normals */
+
+form > div > label{
+  display: block;
+  padding-top: 10px;
+}
+
+/* Classes */
+
+/* REGISTRE */
+
+.title{
+text-align: center;
+padding-bottom: 20px;
+font-weight: 800;
+}
+
+.title-container{
+  font-size: 80px;
+  padding: 30px;
+  border: 3px solid #ECF8F8;
+  text-align: center;
+  margin-top: 15%;
+  font-weight: 500;
+  width: 50%;
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 601px) {
+  .aboutus {
+    font-size: 60px;
+    width: 50%;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutus {
+    font-size: 30px;
+    width: 75%;
+    margin-left: 12%;
+  }
+}
+
+.aboutus-container{
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 4%;
+  color: white;
+  text-align: center;
+  width: 25%;
+  background-color: #555;
+  height: 100%;
+}
+
+.aboutus-container > span{
+  font-size: 40px;
+}
+
+.aboutus-container > p {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 601px){
+  .aboutus-container > p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .aboutus-container > p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 601px){
+  .aboutus-container > span {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .aboutus-container > span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .aboutus-container {
+    width: 50%;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutus-container {
+    width: 75%;
+    margin-left: 12%;
+    margin-bottom: 20%;
+  }
+}
+
+.aboutus{
+  background-color: #666;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+
+@media screen and (min-width: 601px) {
+  .title-container {
+    font-size: 60px;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-container {
+    margin-top: 10%;
+    font-size: 20px;
+    margin-left: 25%;
+  }
+}
+
+.login-container{
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+padding: 70px;
+border: 3px solid #ECF8F8;
+background-color: #949392;
+}
+
+.login-btn{
+font-size: 20px;
+width: 425px;
+background-color: #6F8571;
+border: 1px solid #ECF8F8;
+color: #ECF8F8;
+font-weight: 700;
+}
+
+.input{
+font-size: 26px;
+font-family: 'Varela Round', sans-serif;
+margin: 20px;
+padding: 10px;
+}
+
+.input-label{
+font-size: 30px;
+border: 2px solid #ECF8F8;
+}
+
+.main-title{
+padding: 40px;
+font-size: 80px;
+color: #ECF8F8;
+}
+
+.container{
+  text-align: center;
+color: #ECF8F8;
+font-family: 'Varela Round', sans-serif;
+}
+
+div.container > p > a{
+text-decoration: none;
+color: #ECF8F8;
+}
+
+div.container > p > a:hover{
+color: #99D6D6;
+}
+
+.sidebar-title{
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.signin{
+font-size: 20px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #45a049;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #6F8571;
+}
+
+.container-1 {
+  font-size: 24px;
+  margin-top: 3%;
+  color: white;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #555;
+  padding: 20px;
+}
+
+@media screen and (min-width: 601px) {
+  .container-1 {
+    font-size: 24px;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container-1 {
+    margin-left: 20%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-1 {
+    width:75%;
+    margin-top: 10%;
+    font-size: 20px;
+    margin-left: 12%;
+    margin-bottom: 20%;
+  }
+}
+
+.contact{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 3%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  width: 60%;
+  background-color: #666;
+  height: auto;
+}
+
+@media screen and (min-width: 601px) {
+  .contact {
+    font-size: 60px;
+    width: 50%;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact {
+    width: 50%;
+    margin-left: 30%;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    margin-top: 10%;
+    font-size: 20px;
+    margin-left: 25%;
+    width: 50%;
+  }
+}
+
